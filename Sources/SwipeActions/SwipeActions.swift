@@ -168,7 +168,7 @@ public struct SwipeAction<V1: View, V2: View>: ViewModifier {
                         }
 
                     }.onEnded { value in
-                        print("gesture is ended!")
+                        //print("gesture is ended!")
                         withAnimation {
                             if visibleButton == .left && value.translation.width < -20 { ///user dismisses left buttons
                                 reset()
